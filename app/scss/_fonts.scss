@@ -2,3 +2,6 @@
 
 @include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
 @include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("gotham-bold", "../fonts/GothamBold/GothamBold", bold);
+@include font-face("gotham-light", "../fonts/GothamLight/GothamLight", bold);
+@include font-face("gotham-book", "../fonts/GothamBook/GothamBook", bold);

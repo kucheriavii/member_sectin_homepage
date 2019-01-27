@@ -49,5 +49,317 @@ b, strong {
 }
 
 
+.info-section{
+    background-color: #fafaf6;
+    height: 747px;
+    padding-top: 158px;
+    .stamp-wrap{
+        overflow: hidden;
+        padding-bottom: 154px;
+    }
+    .text{
+        font: 24px/36px "Aleo", sans-serif;
+        width: 500px;
+        border-left: solid 5px #fed559;
+        padding-left: 70px;
+        padding-top: 50px;
+        padding-bottom: 36px;
+        position: relative;
+        &:after{
+            content: "";
+            background: url(../img/stamp.png);
+            position: absolute;
+            display: block;
+            right: -162px;
+            width: 315px;
+            height: 260px;
+            bottom: -160px;
+        }
+        .paragraph{
+            display: block;
+            margin-bottom: 25px;
+            &:first-child{
+                margin-bottom: 37px;
+            }
+        }
+        &--important{
+            font: 35px/42px "gotham-bold", sans-serif;
+            text-align: right;
+            padding-right: 75px;
+            width: 585px;
+            color: $accent;
+           // border-right: 5px solid #f00;
+            float: right;
+            padding-top: 44px;
+        }
+    }
+}
+
+.our-members{
+    width: 100%;
+    &__wrap{
+        background-color: #f0f0eb;
+        margin-top: -8px;
+        padding-top: 90px;
+    }
+    .our-members__header{
+        font: 38px "Aleo", sans-serif;
+        font-weight: 300;
+        text-align: center;
+        display: block;
+        border-bottom: solid 5px #fed559;
+        padding-bottom: 12px;
+        color: $accent;
+        position: relative;
+        &:after{
+            content: "";
+            display: block;
+            background: #f0f0eb url("../img/star.png");
+            width: 23px;
+            height: 23px;
+            position: absolute;
+            left: 50%;
+            z-index: 2;
+            margin-left: -11px;
+        }
+    }
+}
+.our-members__list{
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 72px;
+    max-width: 1162px;
+    display: flex;
+    justify-content: space-between;
+    .our-members__item, .our-members__item--ylw{
+        align-items: center;
+        width: 360px;
+        display: flex;
+        background-color: #fafaf6;
+        flex-direction: column;
+        padding-top: 30px;
+        .our-members__photo{
+            display: block;
+            border-radius: 50% 50%;
+            height: 230px;
+            width: 225px;
+            object-fit: contain;
+        }
+        .our-members__name{
+            font: 24px/29px "gotham-bold" ,sans-serif;
+            color: $accent;
+            padding-left: 27px;
+            padding-right: 27px;
+            padding-top: 18px;
+        }
+        .our-members__detail{
+            font: 24px/29px "gotham-light" ,sans-serif; 
+            align-self: flex-start;
+            color: $accent;
+            padding-left: 26px;
+            padding-top: 3px;
+            padding-bottom: 25px;
+        }
+        .our-members__detail-aft{
+            border-top: 1px solid #fafafa;
+            margin-top: -10px;
+            padding-top: 18px;
+            padding-left: 28px;
+            padding-right: 34px;
+            max-height: 173px;
+            overflow: hidden;
+            position: relative;
+            font-size: 19px;
+            p:last-child{
+                &:after{
+                    content: "...";
+                    position: absolute;
+                    display: inline;
+                }
+            }
+        }
+        .detail-link{
+            background-image: url("../img/arrow.png");
+            width: 17px;
+            height: 24px;
+            position: absolute;
+            background-repeat: no-repeat;
+            bottom: 36px;
+            right: 28px;
+        }
+    }
+    .our-members__item--ylw{
+        background-color: #ffcc32;
+        font: 20px/23px "gotham-light" ,sans-serif;
+        color: $accent;
+        position: relative;
+        .our-members__name{
+            padding-top: 0px;
+        }
+    }
+}
+.link-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;;
+}
+.button{
+    display: inline-block;
+    padding: 16px 34px 22px;
+    background-color: $accent;
+    color: #fff;
+    font: 24px "gotham-book", sans-serif;
+    margin-top: 82px;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 1px;
+    
+}
+
+.footer{
+    width: 100%;
+    min-height: 480px;
+    background-color: $accent;
+    padding-top: 80px;
+}
+.footer-wrap{
+    width: 1225px;
+    margin: 0 auto;
+    display: flex;
+    height: 200px;
+    
+    .subscribe{
+        input{
+            display: block;
+            border: none;
+            border-bottom: 1px solid #a0aebb;
+            background-color: transparent;
+            font: 18px gotham-light,sans-serif;
+            color: #a0aebb;
+            margin-bottom: 5px;
+            height: 40px;
+            width: 240px;
+            margin-left: 33px;
+        }
+        .button--footer{
+            display: block;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #ffcc32;
+            border: none;
+            margin-left: 30px;
+            font: 18px "gotham-book", sans-serif;
+            outline: 0;
+            cursor: pointer;
+        }
+        .form-box{
+            align-self: center;
+            margin-left: 22px;
+        }
+    }
+}
+.form-wrap{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-top: 22px;
+}
+.fellowship-program, .subscribe, .connection{
+    margin-top: 0px;
+    width: 414px;
+    border-right: 1px solid #fff;
+    padding-right: 52px;
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 0px;
+    
+    .fellowship-program-link{
+        color: #fff;
+        border: 1px solid #fff;
+        margin-top: 16px;
+        padding: 11px 48px;
+        font: 18px "gotham-light" ,sans-serif;
+    }
+}
+ .fellowship-program-header, .subscribe-header,.connection-header{
+    font: 24px/23px "gotham-light" ,sans-serif;
+    color: #fff;
+    text-align: right;
+    margin-top: 8px;
+}
+.connection{
+    align-items: flex-start;
+    width: 370px;
+    padding-left: 50px;
+    border-right: none;
+    .social-info{
+        font: 16px/21px "gotham-book" ,sans-serif;
+        word-spacing: 3px;
+        color: #fff;
+        margin-top: 8px;
+    }
+}
+.social{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 80px;
+    .social-item{
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-right: 9px;
+        margin-top: 13px;
+        &.twitter{
+            background-image: url("../img/twiter-icon.png");
+        }
+        &.fb{
+            background-image: url("../img/fb-icon.png");
+        }
+        &.mail{
+            background-image: url("../img/mail-icon.png");
+        }
+    }
+}
+.bacstage{
+    
+    padding-top: 104px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    font: 17px "gotham-book" ,sans-serif;
+    position: relative;
+    &:after{
+        content: "";
+        display: block;
+        width: 320px;
+        height: 275px;
+        background-repeat: no-repeat;
+        background-image: url(../img/stamp-dark.png);
+        background-position: -46px 0;
+        position: absolute;
+        top: -20px;
+    }
+    p{
+        margin-bottom: 5px;
+    }
+    a{
+        color: #fff;
+        text-decoration: underline;
+    }
+}
 
 @import "media"; // Always at the end
