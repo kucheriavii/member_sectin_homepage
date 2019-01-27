@@ -6,23 +6,130 @@
 // ≥1200px
 @include media-breakpoint-down(lg) {
 	.footer{
+        //display: none;
+    }
+     .text--important, .text{
+           max-width: 100%;
+        }
+      .info-section .text:after{
         display: none;
+    }
+    .connection, .fellowship-program, .subscribe{
+        width: 100%;
+        border: none;
+        align-items: center;
+        height: auto;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .footer-wrap{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: auto;
+    }
+    .connection{
+        min-height: 200px;
+    }
+    .bacstage:after{
+        display: none;
+    }
+    .footer-wrap .subscribe .form-box{
+        padding: 0;
+    }
+    .our-members__list .our-members__item, .our-members__list .our-members__item--ylw{
+        height: 500px;
+    }
+    .bacstage{
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
+    .info-section{
+        padding-top: 0;
+        
+        height: auto;
+        
+        .text--important, .text{
+            float: none;
+            border: none;
+            margin: 0 auto;
+            padding: 0;
+            width: 80%;
+            text-align: center;
+            
+        }
+    }
+     .info-section .text:after{
+        display: none;
+    }
+    .info-section .stamp-wrap{
+        padding-bottom: 0;
+    }
     
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-
+    .info-section .text:after{
+        display: none;
+    }
+    .info-section{
+        height: auto;
+        .text--important, .text{
+            float: none;
+            border: none;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
+    .info-section .text--important{
+        font-size: 24px;
+    }
+    .slick-next{
+        display: none !important;
+    }
+    .our-members__list .our-members__item, .our-members__list .our-members__item--ylw{
+        height: 500px;
+    }
+    .form-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-wrap .subscribe .form-box{
+        padding: 0;
+        margin: 0;
+    }
+    .footer-wrap .subscribe input{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .footer-wrap .subscribe .button--footer{
+        margin-left: 0;
+    }
+    .bacstage {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 80%;
+        margin: 0 auto;
+        p{
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+    }
+    .connection-header, .fellowship-program-header, .subscribe-header{
+        text-align: center;
+    }
 }
 
 
