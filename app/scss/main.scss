@@ -129,10 +129,13 @@ b, strong {
     padding: 0;
     list-style-type: none;
     margin-top: 72px;
-    max-width: 1162px;
+    max-width: 1202px;
     display: flex;
     justify-content: space-between;
     .our-members__item, .our-members__item--ylw{
+        height: 455px;
+        margin-right: 20px;
+        margin-left: 20px;
         align-items: center;
         width: 360px;
         display: flex;
@@ -197,6 +200,21 @@ b, strong {
         .our-members__name{
             padding-top: 0px;
         }
+    }
+    .slick-prev:before{
+        content: "";
+        background-image: url("../img/yellow_arrow.png");
+        width: 14px;
+        height: 27px;
+        display: block;
+    }
+    .slick-next:before{
+        content: "";
+        background-image: url("../img/yellow_arrow.png");
+        transform: rotate(180deg);
+        width: 14px;
+        height: 27px;
+        display: block;
     }
 }
 .link-wrap{
@@ -343,15 +361,16 @@ b, strong {
     font: 17px "gotham-book" ,sans-serif;
     position: relative;
     &:after{
-        content: "";
-        display: block;
-        width: 320px;
-        height: 275px;
-        background-repeat: no-repeat;
-        background-image: url(../img/stamp-dark.png);
-        background-position: -46px 0;
-        position: absolute;
-        top: -20px;
+            content: "";
+            display: block;
+            width: 320px;
+            height: 275px;
+            background-repeat: no-repeat;
+            background-image: url(../img/stamp-dark.png);
+            background-position: -43px 66px;
+            position: absolute;
+            background-size: cover;
+            bottom: -33px;
     }
     p{
         margin-bottom: 5px;
